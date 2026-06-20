@@ -1,0 +1,26 @@
+id,name,category,amount,date
+3,Grocery run,Food,85.0,2025-05-10
+4,Grocery run,Food,85.0,2025-05-10
+5,Shopping clothes,Shopping,500.0,2026-05-25
+6,pizza,Food,6.0,2026-06-16
+7,Coffee,Food,4.0,2026-06-16
+8,Nike Shoes,Shopping,15.0,2026-06-15
+9,Trip ,Transport,8.0,2026-06-18
+10,Meat,Food,50.0,2026-04-15
+11,Indrive,Transport,2.0,2026-06-16
+12,Yango,Transport,2.0,2026-06-17
+13,Yango,Transport,1.0,2026-06-13
+14,Blood test,Health,4.0,2026-04-08
+16,Face Treatment,Health,1400.0,2026-08-26
+17,Baggy jeans,Shopping,10.0,2026-06-17
+18,Groceries,Food,320.0,2025-01-15
+19,makeup kit,Shopping,8.0,2026-06-17
+20,Groceries,Food,320.0,2025-01-15
+21,Uber,Transport,150.0,2025-02-10
+22,Pharmacy,Health,90.0,2025-04-05
+23,Monthy Grocery,Food,150.0,2026-08-23
+24,Monthly Grocery,Food,200.0,2026-01-27
+25,Test Coffee,Food,5.99,2025-06-01
+26,Expense to delete,Other,10.0,2025-06-01
+27,Test Coffee,Food,5.99,2025-06-01
+28,Test Coffee,Food,5.99,2025-06-01

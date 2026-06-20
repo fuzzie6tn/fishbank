@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ─── Light Mode (default) ─── */
+.app-container {
+    min-height: 100vh;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    font-family: "DM Sans", sans-serif;
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+
+/* ─── Dark Mode ─── */
+.app-container.dark {
+    background: #0f1117;
+    color: #e8eaf0;
+}
+
+.app-container.dark .navbar {
+    background: #1a1d27;
+    border-bottom: 1px solid #2a2d3a;
+}
+
+.app-container.dark .nav-link {
+    color: #9ca3af;
+}
+
+.app-container.dark .nav-link:hover {
+    background: #2a2d3a;
+    color: #e8eaf0;
+}
+
+.app-container.dark .nav-link.active {
+    background: #1d9e75;
+    color: #ffffff;
+}
+
+.app-container.dark .theme-toggle {
+    background: #2a2d3a;
+    color: #e8eaf0;
+    border-color: #3a3d4a;
+}
+
+/* ─── Navbar ─── */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8ecf0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background 0.3s;
+}
+
+.nav-logo {
+    font-family: "DM Serif Display", serif;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link {
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #6b7280;
+    transition: all 0.2s;
+    display: flex; /* add this */
+    align-items: center; /* add this */
+    gap: 6px;
+}
+
+.nav-link:hover {
+    background: #f4f6f9;
+    color: #1a1a2e;
+}
+
+.nav-link.active {
+    background: #1d9e75;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ─── Dark Mode Toggle Button ─── */
+.theme-toggle {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #e8ecf0;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.2s;
+    display: flex; /* add this */
+    align-items: center; /* add this */
+    gap: 6px;
+}
+
+.theme-toggle:hover {
+    background: #e8ecf0;
+}
+
+/* ─── Main Content ─── */
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}

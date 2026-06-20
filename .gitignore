@@ -1,0 +1,17 @@
+# Backend
+finance-backend/venv/
+finance-backend/__pycache__/
+finance-backend/*.pyc
+finance-backend/.pytest_cache/
+finance-backend/data/expenses.csv
+finance-backend/data/budget.json
+
+# Frontend
+finance-dashboard/node_modules/
+finance-dashboard/build/
+finance-dashboard/.env
+finance-dashboard/.env.local
+
+# General
+.DS_Store
+.env

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+python-multipart
+
+----------------------------------
+React Frontend (port 3000)
+        ↕  CORS allows this
+FastAPI Backend (main.py)
+        ↕
+   database.py  →  CSV file
+   model.py     →  ML prediction & tips
