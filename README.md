@@ -126,9 +126,9 @@ Saves your monthly budget target. If this file does not exist, the system defaul
 ### Spending Prediction Model
 The next-month forecast is generated inside `model.py` using Scikit-Learn's `LinearRegression` model:
 1. The backend reads the transaction CSV and extracts the date column.
-2. It groups expenses by their month number (e.g. 1 for January, 12 for December) and calculates the sum of spending for each month.
-3. The model is trained using the month number as the independent feature ($X$) and the total monthly spending as the target variable ($y$).
-4. The model predicts the spending for the next month index ($max\_month + 1$). If the index exceeds 12, it wraps back to 1.
+2. It groups expenses by a combined year-month key (year * 12 + month) rather than by month number alone, so the same calendar month in different years (e.g. January 2025 vs January 2026) isn't incorrectly merged together.
+3. The model is trained using the year-month key as the independent feature (X) and the total monthly spending as the target variable (y).
+4. The model predicts spending for the next sequential year-month key following the most recent month in the data.
 
 ### Savings Recommendations
 Category insights compare the user's monthly spending totals against hardcoded target thresholds:
